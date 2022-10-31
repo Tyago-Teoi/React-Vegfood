@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 
 function NavBar() {
@@ -50,15 +50,29 @@ function NavBar() {
               </span>
             </p>
           </div>
+
+          <a className="navbar-item is-hidden-desktop">
+            <span class="icon">
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </span>
+            <span>Login</span>
+          </a>
+
+          <a className="navbar-item is-hidden-desktop">
+            <span class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span>Carrinho</span>
+          </a>
         </div>
 
-        <div className="navbar-end">
+        <div className="is-hidden-touch navbar-end">
           <div className="navbar-item">
             <a className="button is-primary" id="login-btn">
               <strong>Entrar</strong>
             </a>
           </div>
-          <div className="navbar-item" >
+          <div className="navbar-item">
             <a id="cart-btn">
               <span className="material-icons" id="cart-icon">
                 shopping_cart
