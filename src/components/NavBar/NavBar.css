@@ -24,6 +24,10 @@
   background-color: #7fb77e;
 }
 
+#login-btn:hover {
+  background-color: #65b769;
+}
+
 .navbar-item img {
   max-height: 58px;
   width: 188.76px;

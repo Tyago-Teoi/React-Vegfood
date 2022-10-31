@@ -52,15 +52,15 @@ function NavBar() {
           </div>
 
           <a className="navbar-item is-hidden-desktop">
-            <span class="icon">
-              <i class="fa-solid fa-right-to-bracket"></i>
+            <span className="icon">
+              <i className="fa-solid fa-right-to-bracket"></i>
             </span>
-            <span>Login</span>
+            <span>Entrar</span>
           </a>
 
           <a className="navbar-item is-hidden-desktop">
-            <span class="icon">
-              <i class="fa-solid fa-cart-shopping"></i>
+            <span className="icon">
+              <i className="fa-solid fa-cart-shopping"></i>
             </span>
             <span>Carrinho</span>
           </a>
@@ -68,9 +68,9 @@ function NavBar() {
 
         <div className="is-hidden-touch navbar-end">
           <div className="navbar-item">
-            <a className="button is-primary" id="login-btn">
+            <button className="login-btn button is-primary" id="login-btn">
               <strong>Entrar</strong>
-            </a>
+            </button>
           </div>
           <div className="navbar-item">
             <a id="cart-btn">
