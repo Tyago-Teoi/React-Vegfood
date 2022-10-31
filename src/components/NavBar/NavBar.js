@@ -14,7 +14,8 @@ function NavBar() {
           <a class="navbar-item" href="/">
             <img
               src="http://localhost:3000/logo.png"
-              alt="VegFood's logo: a pig with a heart on the background"
+              alt="Vegfood's logo: a pig with a heart on the background"
+              id="logo-vegfood"
             />
           </a>
 
@@ -32,25 +33,32 @@ function NavBar() {
         </div>
 
         <div className="navbar-menu">
-          <div className="navbar-item">
-            <input
-              class="navbar-item input is-rounded"
-              type="text"
-              placeholder="Rounded input"
-            ></input>
+          <div id="search-item" className="navbar-item">
+            <p id="search-field" class="control has-icons-left">
+              <input
+                class="input is-rounded"
+                type="text"
+                placeholder="Buscar restaurantes ou pratos..."
+              />
+              <span class="icon is-small is-left">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </p>
           </div>
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Entrar</strong>
-              </a>
-              <a>
-                <span class="material-icons">shopping_cart</span>
-              </a>
-            </div>
+          <div className="navbar-item">
+            <a class="button is-primary" id="login-btn">
+              <strong>Entrar</strong>
+            </a>
+          </div>
+          <div class="navbar-item" >
+            <a id="cart-btn">
+              <span class="material-icons" id="cart-icon">
+                shopping_cart
+              </span>
+            </a>
           </div>
         </div>
       </nav>

@@ -1,3 +1,34 @@
-#nav-vegfood{
-    background-color: #1C6758;
+#nav-vegfood {
+  background-color: #1c6758;
+  height: 79px;
+}
+
+#cart-icon {
+  color: #fff;
+  font-size: 38px;
+}
+
+#cart-btn {
+  height: 38px;
+}
+
+#search-field {
+  width: 80%;
+}
+
+#search-item {
+  width: 100%;
+}
+
+#login-btn {
+  background-color: #7fb77e;
+}
+
+.navbar-item img {
+  max-height: 58px;
+  width: 188.76px;
+}
+
+.navbar-end {
+  margin-right: 10px;
 }
