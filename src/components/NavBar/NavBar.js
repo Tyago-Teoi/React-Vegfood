@@ -1,17 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import "./NavBar.css";
 
 function NavBar() {
+  const [isBurgerActive, setIsBurgerActive] = useState(false);
+
+  const activateBurger = () => setIsBurgerActive((prev) => !prev);
+
   return (
     <>
       <nav
         id="nav-vegfood"
-        class="navbar"
+        className="navbar"
         role="navigation"
         aria-label="main navigation"
       >
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
+        <div className="navbar-brand">
+          <a className="navbar-item" href="/">
             <img
               src="http://localhost:3000/logo.png"
               alt="Vegfood's logo: a pig with a heart on the background"
@@ -20,8 +24,9 @@ function NavBar() {
           </a>
 
           <a
+            onClick={activateBurger}
             role="button"
-            class="navbar-burger"
+            className={`navbar-burger ${isBurgerActive ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
@@ -32,30 +37,30 @@ function NavBar() {
           </a>
         </div>
 
-        <div className="navbar-menu">
+        <div className={`navbar-menu ${isBurgerActive ? "is-active" : ""}`}>
           <div id="search-item" className="navbar-item">
-            <p id="search-field" class="control has-icons-left">
+            <p id="search-field" className="control has-icons-left">
               <input
-                class="input is-rounded"
+                className="input is-rounded"
                 type="text"
                 placeholder="Buscar restaurantes ou pratos..."
               />
-              <span class="icon is-small is-left">
-                <i class="fa-solid fa-magnifying-glass"></i>
+              <span className="icon is-small is-left">
+                <i className="fa-solid fa-magnifying-glass"></i>
               </span>
             </p>
           </div>
         </div>
 
-        <div class="navbar-end">
+        <div className="navbar-end">
           <div className="navbar-item">
-            <a class="button is-primary" id="login-btn">
+            <a className="button is-primary" id="login-btn">
               <strong>Entrar</strong>
             </a>
           </div>
-          <div class="navbar-item" >
+          <div className="navbar-item" >
             <a id="cart-btn">
-              <span class="material-icons" id="cart-icon">
+              <span className="material-icons" id="cart-icon">
                 shopping_cart
               </span>
             </a>
