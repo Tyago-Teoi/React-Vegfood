@@ -1,0 +1,9 @@
+.footer {
+    background-color: #1C6758;
+    height: 15vh;
+    text-align: left;
+}
+
+.footer .logo {
+    height: 100%;
+}
