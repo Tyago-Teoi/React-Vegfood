@@ -1,12 +1,13 @@
 .footer {
     background-color: #1C6758;
-    height: 15vh;
-    text-align: left;
-    display: flex;
+    height: 150px;
+    display:flex;
+    padding: 0 0 0 0;
 }
 
 .logo {
     height: 100%;
+    align-self: flex-start;
 }
 
 .footer-text-container {
@@ -35,4 +36,5 @@
     margin:0 0 0 0;
     font-size: 16px;
     text-align: center;
+    color: white;
 }

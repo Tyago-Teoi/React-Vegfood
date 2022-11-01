@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from "./components/NavBar/NavBar";
 import Card from './components/Card/Card';
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar></NavBar>
     <Card></Card>
+    <Footer/>
   </React.StrictMode>
 );
 
