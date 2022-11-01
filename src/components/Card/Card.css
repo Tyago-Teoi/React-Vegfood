@@ -1,23 +1,23 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    height: 301px;
-    background-color: #D6CDA4;
-    color: #334932;
-    padding: 18px 18px 18px 18px;
-    text-align: left;
-    border-radius: 10px;
+  background-color: #d6cda4;
+  color: #334932;
+  padding: 18px 18px 18px 18px;
+  text-align: left;
+  border-radius: 10px;
 }
 
 .image {
-    margin: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
 }
 
 .txt_larger {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .txt_smaller {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+.centered-section {
+  text-align: center;
 }

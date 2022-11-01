@@ -14,10 +14,79 @@ function ComponentName() {
           Confira os nossos restaurantes parceiros e os seus pratos abaixo.
         </p>
       </section>
-      <section id="popular-restaurants" className="section"></section>
-      <section id="popular-dishes" className="section"></section>
-      <section id="ingredients" className="section"></section>
-      <Card></Card>
+      <section
+        id="popular-restaurants"
+        className="section centered-section mb-5"
+      >
+        <h1 className="title section-title mb-6">Pratos mais vendidos</h1>
+        <div className="columns">
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+        </div>
+      </section>
+      <section id="popular-dishes" className="section centered-section mb-5">
+        <h1 className="title section-title mb-6">Restaurantes mais famosos</h1>
+        <div className="columns">
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+        </div>
+      </section>
+      <section id="ingredients" className="section centered-section mb-5">
+        <h1 className="title section-title mb-6">Faça você mesmo</h1>
+        <div className="columns">
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+          <div className="column">
+            <Card />
+          </div>
+        </div>
+      </section>
+
       <Footer></Footer>
     </>
   );
