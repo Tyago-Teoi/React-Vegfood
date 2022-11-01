@@ -2,8 +2,37 @@
     background-color: #1C6758;
     height: 15vh;
     text-align: left;
+    display: flex;
 }
 
-.footer .logo {
+.logo {
     height: 100%;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title-container {
+    /*background-color: #0ecfa9;*/
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.page-title {
+    margin:0 3vw 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright {
+    /*background-color: #2b0ecf;*/
+    margin:0 0 0 0;
+    font-size: 16px;
+    text-align: center;
 }
