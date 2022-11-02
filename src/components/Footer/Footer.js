@@ -1,23 +1,45 @@
-import './Footer.css'
+import "./Footer.css";
 
 function Footer() {
-    return(
-        <footer className="footer">
-            <img src="/imgs/logo-footer.png" alt="Logo da VegFood" className="logo"></img>
+  const currYear = new Date().getFullYear();
 
-            <div className="footer-text-container">
-                <div className="page-title-container">
-                    <p className="page-title">Sobre Nós</p>
-                    <p className="page-title">Trabalhe Conosco</p>
-                    <p className="page-title">Cadastre seu Restaurante</p>
-                    <p className="page-title">Fale Conosco</p>
-                </div>
-            
-                <p className="copyright">© Copyright 2022 - VegFood</p>
+  return (
+    <footer className="footer mt-6 pb-6 has-text-centered">
+      <div className="tile is-ancestor">
+        <div className="tile is-2 is-parent">
+          <div className="tile is-child is-flex is-justify-content-center">
+            <figure className="is-flex is-align-items-center image is-128x128">
+              <img
+                src="http://localhost:3000/logo-footer.png"
+                alt="Logo da VegFood"
+              ></img>
+            </figure>
+          </div>
+        </div>
+        <div className="has-text-centered tile is-vertical is-parent">
+          <div className="tile">
+            <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
+              <a className="page-link">Sobre Nós</a>
             </div>
-        </footer>
-    ) 
-    
+            <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
+              <a className="page-link">Trabalhe Conosco</a>
+            </div>
+            <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
+              <a className="page-link">Cadastre seu Restaurante</a>
+            </div>
+            <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
+              <a className="page-link">Fale Conosco</a>
+            </div>
+          </div>
+          <div className="tile">
+            <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
+              <p className="copyright">© Copyright {currYear} - VegFood</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
