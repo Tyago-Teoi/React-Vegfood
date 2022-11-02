@@ -15,7 +15,7 @@ function NavBar() {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
+          <a className="navbar-item highlight-on-hover" href="/">
             <img
               src="http://localhost:3000/logo.png"
               alt="Vegfood's logo: a pig with a heart on the background"
@@ -51,14 +51,14 @@ function NavBar() {
             </p>
           </div>
 
-          <a className="navbar-item is-hidden-desktop">
+          <a href="/" className="navbar-item is-hidden-desktop">
             <span className="icon">
               <i className="fa-solid fa-right-to-bracket"></i>
             </span>
             <span>Entrar</span>
           </a>
 
-          <a className="navbar-item is-hidden-desktop">
+          <a href="/" className="navbar-item is-hidden-desktop">
             <span className="icon">
               <i className="fa-solid fa-cart-shopping"></i>
             </span>
@@ -72,8 +72,8 @@ function NavBar() {
               <strong>Entrar</strong>
             </button>
           </div>
-          <div className="navbar-item">
-            <a id="cart-btn">
+          <div className="navbar-item highlight-on-hover">
+            <a href="/" id="cart-btn">
               <span className="material-icons" id="cart-icon">
                 shopping_cart
               </span>

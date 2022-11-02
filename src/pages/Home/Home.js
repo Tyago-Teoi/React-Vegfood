@@ -19,7 +19,7 @@ function ComponentName() {
         className="section centered-section mb-5"
       >
         <h1 className="title section-title mb-6">Pratos mais vendidos</h1>
-        <div className="columns">
+        <div className="columns is-multiline">
           <div className="column">
             <Card />
           </div>
@@ -42,7 +42,7 @@ function ComponentName() {
       </section>
       <section id="popular-dishes" className="section centered-section mb-5">
         <h1 className="title section-title mb-6">Restaurantes mais famosos</h1>
-        <div className="columns">
+        <div className="columns is-multiline">
           <div className="column">
             <Card />
           </div>
@@ -65,7 +65,7 @@ function ComponentName() {
       </section>
       <section id="ingredients" className="section centered-section mb-5">
         <h1 className="title section-title mb-6">Faça você mesmo</h1>
-        <div className="columns">
+        <div className="columns is-multiline">
           <div className="column">
             <Card />
           </div>

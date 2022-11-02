@@ -17,18 +17,18 @@ function Footer() {
           </div>
         </div>
         <div className="has-text-centered tile is-vertical is-parent">
-          <div className="tile">
+          <div className="tile pd-3">
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a className="page-link">Sobre Nós</a>
+              <a href="/" className="page-link">Sobre Nós</a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a className="page-link">Trabalhe Conosco</a>
+              <a href="/" className="page-link">Trabalhe Conosco</a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a className="page-link">Cadastre seu Restaurante</a>
+              <a href="/" className="page-link">Cadastre seu Restaurante</a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a className="page-link">Fale Conosco</a>
+              <a href="/" className="page-link">Fale Conosco</a>
             </div>
           </div>
           <div className="tile">
