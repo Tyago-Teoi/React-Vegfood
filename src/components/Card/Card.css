@@ -4,6 +4,7 @@
   padding: 18px 18px 18px 18px;
   text-align: left;
   border-radius: 10px;
+  max-width: 230px;
 }
 
 .card:hover {

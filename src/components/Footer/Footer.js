@@ -12,13 +12,13 @@ function Footer() {
             <figure className="is-flex is-align-items-center image is-128x128">
               <img
                 src="http://localhost:3000/logo-footer.png"
-                alt="Logo da VegFood"
+                alt="VegFood's alternate logo: three pigs in a row and red heart in the background"
               ></img>
             </figure>
           </div>
         </div>
         <div className="has-text-centered tile is-vertical is-parent">
-          <div className="tile pd-3">
+          <div className="tile pb-5">
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
               <a href="/" className="page-link">
                 <FormattedMessage id="footer.about-us" />

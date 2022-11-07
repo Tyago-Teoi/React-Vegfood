@@ -4,7 +4,7 @@ import dish from "./dish-image.png";
 
 const Card = () => {
   return (
-    <a href="/">
+    <a href="/" className="is-flex is-justify-content-center">
       <div className="card is-flex is-justify-content-center">
         <div className="content">
           <img className="image" src={dish} alt="The dish"></img>

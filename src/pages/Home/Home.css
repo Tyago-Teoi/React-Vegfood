@@ -5,6 +5,7 @@
   line-height: 47px;
   color: #ffffff;
   background-image: url("veggies.jpg");
+  background-size: cover;
   box-shadow: inset 0 0 0 2000px #7fb77e6d;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,4 +28,9 @@
 
 .centered-section {
   text-align: center;
+}
+
+.centered-card{
+  margin-left: auto;
+  margin-right: auto;
 }
