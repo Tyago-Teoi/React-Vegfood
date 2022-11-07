@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
+import { FormattedMessage } from "react-intl";
 import "./Home.css";
 
 function ComponentName() {
@@ -10,15 +11,16 @@ function ComponentName() {
       <NavBar></NavBar>
       <section id="welcome" className="section">
         <p id="message">
-          Bem-vindo! Somos uma plataforma de delivery de comida 100% vegana.
-          Confira os nossos restaurantes parceiros e os seus pratos abaixo.
+          <FormattedMessage id="home.welcome" />
         </p>
       </section>
       <section
         id="popular-restaurants"
         className="section centered-section mb-5"
       >
-        <h1 className="title section-title mb-6">Pratos mais vendidos</h1>
+        <h1 className="title section-title mb-6">
+          <FormattedMessage id="home.dishes-header" />
+        </h1>
         <div className="columns is-multiline">
           <div className="column">
             <Card />
@@ -41,7 +43,9 @@ function ComponentName() {
         </div>
       </section>
       <section id="popular-dishes" className="section centered-section mb-5">
-        <h1 className="title section-title mb-6">Restaurantes mais famosos</h1>
+        <h1 className="title section-title mb-6">
+          <FormattedMessage id="home.restaurants-header" />
+        </h1>
         <div className="columns is-multiline">
           <div className="column">
             <Card />
@@ -64,7 +68,9 @@ function ComponentName() {
         </div>
       </section>
       <section id="ingredients" className="section centered-section mb-5">
-        <h1 className="title section-title mb-6">Faça você mesmo</h1>
+        <h1 className="title section-title mb-6">
+          <FormattedMessage id="home.ingredients-header" />
+        </h1>
         <div className="columns is-multiline">
           <div className="column">
             <Card />

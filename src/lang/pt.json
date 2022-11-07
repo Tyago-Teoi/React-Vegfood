@@ -1,0 +1,15 @@
+{
+    "home.welcome": "Bem-vindo! Somos uma plataforma de delivery de comida 100% vegana. Confira os nossos restaurantes parceiros e os seus pratos abaixo.",
+    "home.dishes-header": "Pratos mais vendidos",
+    "home.restaurants-header": "Restaurantes mais famosos",
+    "home.ingredients-header": "Faça você mesmo",
+    "footer.about-us": "Sobre nós",
+    "footer.work-with-us": "Trabalhe conosco",
+    "footer.register-restaurant": "Cadastre seu restaurante",
+    "footer.contact-us": "Fale conosco",
+    "nav.log-in": "Entrar",
+    "nav.cart": "Carrinho",
+    "nav.search": "Buscar restaurantes ou pratos",
+    "card.dish-name": "Nome do prato",
+    "card.restaurant-name": "Restaurante"
+}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { FormattedMessage, useIntl  } from "react-intl";
 import "./NavBar.css";
 
 function NavBar() {
+  const intl = useIntl();
   const [isBurgerActive, setIsBurgerActive] = useState(false);
 
   const activateBurger = () => setIsBurgerActive((prev) => !prev);
@@ -43,7 +45,7 @@ function NavBar() {
               <input
                 className="input is-rounded"
                 type="text"
-                placeholder="Buscar restaurantes ou pratos..."
+                placeholder={intl.formatMessage({id: "nav.search"})}
               />
               <span className="icon is-small is-left">
                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -55,21 +57,23 @@ function NavBar() {
             <span className="icon">
               <i className="fa-solid fa-right-to-bracket"></i>
             </span>
-            <span>Entrar</span>
+            <span><FormattedMessage id="nav.log-in" /></span>
           </a>
 
           <a href="/" className="navbar-item is-hidden-desktop">
             <span className="icon">
               <i className="fa-solid fa-cart-shopping"></i>
             </span>
-            <span>Carrinho</span>
+            <span><FormattedMessage id="nav.cart" /></span>
           </a>
         </div>
 
         <div className="is-hidden-touch navbar-end">
           <div className="navbar-item">
             <button className="login-btn button is-primary" id="login-btn">
-              <strong>Entrar</strong>
+              <strong>
+                <FormattedMessage id="nav.log-in" />
+              </strong>
             </button>
           </div>
           <div className="navbar-item highlight-on-hover">

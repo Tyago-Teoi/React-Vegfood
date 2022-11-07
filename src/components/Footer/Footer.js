@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { FormattedMessage } from "react-intl";
 
 function Footer() {
   const currYear = new Date().getFullYear();
@@ -19,16 +20,24 @@ function Footer() {
         <div className="has-text-centered tile is-vertical is-parent">
           <div className="tile pd-3">
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a href="/" className="page-link">Sobre Nós</a>
+              <a href="/" className="page-link">
+                <FormattedMessage id="footer.about-us" />
+              </a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a href="/" className="page-link">Trabalhe Conosco</a>
+              <a href="/" className="page-link">
+                <FormattedMessage id="footer.work-with-us" />
+              </a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a href="/" className="page-link">Cadastre seu Restaurante</a>
+              <a href="/" className="page-link">
+                <FormattedMessage id="footer.register-restaurant" />
+              </a>
             </div>
             <div className="tile is-child is-flex is-align-items-center is-justify-content-center">
-              <a href="/" className="page-link">Fale Conosco</a>
+              <a href="/" className="page-link">
+                <FormattedMessage id="footer.contact-us" />
+              </a>
             </div>
           </div>
           <div className="tile">
