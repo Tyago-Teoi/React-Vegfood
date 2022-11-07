@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 import "./NavBar.css";
 import { LOCALES } from "../../lang/locales";
+import logo from "./logo.png"
 
 function NavBar(props) {
   const intl = useIntl();
@@ -20,7 +21,7 @@ function NavBar(props) {
         <div className="navbar-brand">
           <a className="navbar-item highlight-on-hover" href="/">
             <img
-              src="http://localhost:3000/logo.png"
+              src={logo}
               alt="Vegfood's logo: a pig with a heart on the background"
               id="logo-vegfood"
             />
