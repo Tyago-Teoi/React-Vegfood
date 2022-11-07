@@ -5,10 +5,10 @@ import Footer from "../../components/Footer/Footer";
 import { FormattedMessage } from "react-intl";
 import "./Home.css";
 
-function ComponentName() {
+function Home(props) {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar currentLocale={props.currentLocale} handleLocaleChange={props.handleLocaleChange}></NavBar>
       <section id="welcome" className="section">
         <p id="message">
           <FormattedMessage id="home.welcome" />
@@ -98,4 +98,4 @@ function ComponentName() {
   );
 }
 
-export default ComponentName;
+export default Home;

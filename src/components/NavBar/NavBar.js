@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { FormattedMessage, useIntl  } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import "./NavBar.css";
+import { LOCALES } from "../../lang/locales";
 
-function NavBar() {
+function NavBar(props) {
   const intl = useIntl();
   const [isBurgerActive, setIsBurgerActive] = useState(false);
 
@@ -45,7 +46,7 @@ function NavBar() {
               <input
                 className="input is-rounded"
                 type="text"
-                placeholder={intl.formatMessage({id: "nav.search"})}
+                placeholder={intl.formatMessage({ id: "nav.search" })}
               />
               <span className="icon is-small is-left">
                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -53,22 +54,61 @@ function NavBar() {
             </p>
           </div>
 
+
+
           <a href="/" className="navbar-item is-hidden-desktop">
             <span className="icon">
               <i className="fa-solid fa-right-to-bracket"></i>
             </span>
-            <span><FormattedMessage id="nav.log-in" /></span>
+            <span>
+              <FormattedMessage id="nav.log-in" />
+            </span>
           </a>
 
           <a href="/" className="navbar-item is-hidden-desktop">
             <span className="icon">
               <i className="fa-solid fa-cart-shopping"></i>
             </span>
-            <span><FormattedMessage id="nav.cart" /></span>
+            <span>
+              <FormattedMessage id="nav.cart" />
+            </span>
           </a>
+
+          <div className="navbar-item">
+            <div className="control has-icons-left">
+              <div className="select">
+                <select
+                  onChange={props.handleLocaleChange}
+                  value={props.currentLocale}
+                >
+                  <option value={LOCALES.PORTUGUESE}>PT-BR</option>
+                  <option value={LOCALES.ENGLISH}>EN</option>
+                </select>
+              </div>
+              <div className="icon is-small is-left">
+                <i className="fas fa-globe"></i>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="is-hidden-touch navbar-end">
+          <div className="navbar-item">
+            <div className="control has-icons-left desktop-select">
+              <div className="select is-rounded">
+                <select
+                  onChange={props.handleLocaleChange}
+                  value={props.currentLocale}
+                >
+                  <option value={LOCALES.PORTUGUESE}>PT-BR</option>
+                  <option value={LOCALES.ENGLISH}>EN</option>
+                </select>
+              </div>
+              <div className="icon is-small is-left">
+                <i className="fas fa-globe"></i>
+              </div>
+            </div>
+          </div>
           <div className="navbar-item">
             <button className="login-btn button is-primary" id="login-btn">
               <strong>
