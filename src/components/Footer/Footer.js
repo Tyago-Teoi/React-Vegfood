@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { FormattedMessage } from "react-intl";
+import logo  from "./logo-footer.png";
 
 function Footer() {
   const currYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ function Footer() {
           <div className="tile is-child is-flex is-justify-content-center">
             <figure className="is-flex is-align-items-center image is-128x128">
               <img
-                src="http://localhost:3000/logo-footer.png"
+                src={logo}
                 alt="VegFood's alternate logo: three pigs in a row and red heart in the background"
               ></img>
             </figure>
