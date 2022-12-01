@@ -1,0 +1,23 @@
+.vegfood-box {
+  background-color: #d6cda4;
+  width: 565px;
+  padding: 6rem;
+}
+
+.login-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem !important;
+}
+
+#continue-btn {
+  background-color: #7fb77e;
+}
+
+#continue-btn:hover {
+  background-color: #65b769;
+}
+
+.eating {
+  width: 458px;
+  height: 368px;
+}

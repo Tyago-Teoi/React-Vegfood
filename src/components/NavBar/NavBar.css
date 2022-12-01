@@ -28,7 +28,7 @@
   background-color: #65b769;
 }
 
-.desktop-select{
+.desktop-select {
   background-color: #1c6758;
 }
 
@@ -53,6 +53,10 @@ a.navbar-item .icon {
   margin-right: 5px;
 }
 
-.highlight-on-hover:hover{
-  background-color: rgba(0,0,0,.05);
+.highlight-on-hover:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.input {
+  border-radius: 20px;
 }

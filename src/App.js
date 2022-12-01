@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import { IntlProvider } from "react-intl";
 import { messages } from "./lang/messages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./pages/Login/Login";
 
 function App() {
   const getInitialLocale = () => {
@@ -22,11 +23,6 @@ function App() {
   return (
     <div className="App">
       <IntlProvider locale={currentLocale} messages={messages[currentLocale]}>
-        {/* <Home
-          currentLocale={currentLocale}
-          handleLocaleChange={handleLocaleChange}
-        /> */}
-
         <BrowserRouter>
           <Routes>
             <Route
@@ -35,9 +31,18 @@ function App() {
                 <Home
                   currentLocale={currentLocale}
                   handleLocaleChange={handleLocaleChange}
-                ></Home>
+                />
               }
-            ></Route>
+            />
+            <Route
+              path="/login"
+              element={
+                <Login
+                  currentLocale={currentLocale}
+                  handleLocaleChange={handleLocaleChange}
+                />
+              }
+            />
           </Routes>
         </BrowserRouter>
       </IntlProvider>
