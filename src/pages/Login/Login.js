@@ -12,7 +12,7 @@ function Login(props) {
         handleLocaleChange={props.handleLocaleChange}
       ></NavBar>
       <div className="columns login-section is-vcentered is-centered">
-        <div className="column">
+        <div className="column is-hidden-mobile">
           <figure class="eating mx-auto">
             <img
               src={eating}
@@ -28,9 +28,9 @@ function Login(props) {
                 <span class="icon">
                   <i class="fa-solid fa-envelope"></i>
                 </span>
-                <label className="label veg-green">E-mail ou Celular</label>
+                <label className="label veg-green">E-mail</label>
               </span>
-              <input class="input is-rounded is-medium" type="text"></input>
+              <input class="input is-rounded is-medium" type="text" placeholder="Insira seu e-mail"></input>
             </div>
             <button
               class="button is-fullwidth is-primary is-medium"
