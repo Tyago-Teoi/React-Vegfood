@@ -24,30 +24,30 @@ function NavBar(props) {
           <a className="navbar-item highlight-on-hover" href="/">
             <img
               src={logo}
-              alt="Vegfood's logo: a pig with a heart on the background"
+              alt={intl.formatMessage({
+                  id: "navbar.logo",
+                })}
               id="logo-vegfood"
             />
           </a>
 
-          {currentRoute !== "/login" && (
-            <a
-              onClick={activateBurger}
-              role="button"
-              className={`navbar-burger ${isBurgerActive ? "is-active" : ""}`}
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          )}
+          <a
+            onClick={activateBurger}
+            role="button"
+            className={`navbar-burger ${isBurgerActive ? "is-active" : ""}`}
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
 
-        {currentRoute !== "/login" && (
-          <>
-            <div className={`navbar-menu ${isBurgerActive ? "is-active" : ""}`}>
+        <div className={`navbar-menu ${isBurgerActive ? "is-active" : ""}`}>
+          {currentRoute !== "/login" && (
+            <>
               <div id="search-item" className="navbar-item">
                 <p id="search-field" className="control has-icons-left">
                   <input
@@ -60,7 +60,6 @@ function NavBar(props) {
                   </span>
                 </p>
               </div>
-
               <a href="/" className="navbar-item is-hidden-desktop">
                 <span className="icon">
                   <i className="fa-solid fa-right-to-bracket"></i>
@@ -69,7 +68,6 @@ function NavBar(props) {
                   <FormattedMessage id="nav.log-in" />
                 </span>
               </a>
-
               <a href="/" className="navbar-item is-hidden-desktop">
                 <span className="icon">
                   <i className="fa-solid fa-cart-shopping"></i>
@@ -77,43 +75,48 @@ function NavBar(props) {
                 <span>
                   <FormattedMessage id="nav.cart" />
                 </span>
-              </a>
+              </a>{" "}
+            </>
+          )}
 
-              <div className="navbar-item">
-                <div className="control has-icons-left">
-                  <div className="select">
-                    <select
-                      onChange={props.handleLocaleChange}
-                      value={props.currentLocale}
-                    >
-                      <option value={LOCALES.PORTUGUESE}>PT-BR</option>
-                      <option value={LOCALES.ENGLISH}>EN</option>
-                    </select>
-                  </div>
-                  <div className="icon is-small is-left">
-                    <i className="fas fa-globe"></i>
-                  </div>
-                </div>
+          <div className="navbar-item is-hidden-desktop">
+            <div className="control has-icons-left">
+              <div className="select">
+                <select
+                  onChange={props.handleLocaleChange}
+                  value={props.currentLocale}
+                >
+                  <option value={LOCALES.PORTUGUESE}>PT-BR</option>
+                  <option value={LOCALES.ENGLISH}>EN</option>
+                </select>
+              </div>
+              <div className="icon is-small is-left">
+                <i className="fas fa-globe"></i>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="is-hidden-touch navbar-end">
-              <div className="navbar-item">
-                <div className="control has-icons-left desktop-select">
-                  <div className="select is-rounded">
-                    <select
-                      onChange={props.handleLocaleChange}
-                      value={props.currentLocale}
-                    >
-                      <option value={LOCALES.PORTUGUESE}>PT-BR</option>
-                      <option value={LOCALES.ENGLISH}>EN</option>
-                    </select>
-                  </div>
-                  <div className="icon is-small is-left">
-                    <i className="fas fa-globe"></i>
-                  </div>
-                </div>
+        <div className="is-hidden-touch navbar-end">
+          <div className="navbar-item">
+            <div className="control has-icons-left desktop-select">
+              <div className="select is-rounded">
+                <select
+                  onChange={props.handleLocaleChange}
+                  value={props.currentLocale}
+                >
+                  <option value={LOCALES.PORTUGUESE}>PT-BR</option>
+                  <option value={LOCALES.ENGLISH}>EN</option>
+                </select>
               </div>
+              <div className="icon is-small is-left">
+                <i className="fas fa-globe"></i>
+              </div>
+            </div>
+          </div>
+
+          {currentRoute !== "/login" && (
+            <>
               <div className="navbar-item">
                 <button className="login-btn button is-primary" id="login-btn">
                   <strong>
@@ -128,9 +131,9 @@ function NavBar(props) {
                   </span>
                 </a>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
+        </div>
       </nav>
     </>
   );

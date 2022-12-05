@@ -1,13 +1,18 @@
 import "./Card.css";
 import { FormattedMessage } from "react-intl";
+import { useIntl } from "react-intl";
 import dish from "./dish-image.png";
 
 const Card = () => {
+  const intl = useIntl();
+
   return (
     <a href="/" className="is-flex is-justify-content-center">
       <div className="card is-flex is-justify-content-center">
         <div className="content">
-          <img className="image" src={dish} alt="The dish"></img>
+          <img className="image" src={dish} alt={intl.formatMessage({
+                  id: "card.dish",
+                })}></img>
           <div className="txt_larger">
             <FormattedMessage id="card.dish-name" />
           </div>

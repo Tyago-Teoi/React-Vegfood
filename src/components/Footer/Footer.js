@@ -1,8 +1,10 @@
 import "./Footer.css";
 import { FormattedMessage } from "react-intl";
 import logo  from "./logo-footer.png";
+import { useIntl } from "react-intl";
 
 function Footer() {
+  const intl = useIntl();
   const currYear = new Date().getFullYear();
 
   return (
@@ -13,7 +15,9 @@ function Footer() {
             <figure className="is-flex is-align-items-center image is-128x128">
               <img
                 src={logo}
-                alt="VegFood's alternate logo: three pigs in a row and red heart in the background"
+                alt={intl.formatMessage({
+                  id: "footer.alt-logo",
+                })}
               ></img>
             </figure>
           </div>
