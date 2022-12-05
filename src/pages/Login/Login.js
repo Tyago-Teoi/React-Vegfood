@@ -22,13 +22,13 @@ function Login(props) {
         </div>
         <div className="column">
           <div className="box vegfood-box mx-auto">
-            <h1 className="title mb-6">Entre ou Crie Sua Conta!</h1>
+            <h1 className="title mb-6 veg-green">Entre ou Crie Sua Conta!</h1>
             <div className="field mb-6">
               <span class="icon-text mb-4">
                 <span class="icon">
                   <i class="fa-solid fa-envelope"></i>
                 </span>
-                <label className="label">E-mail ou Celular</label>
+                <label className="label veg-green">E-mail ou Celular</label>
               </span>
               <input class="input is-rounded is-medium" type="text"></input>
             </div>
