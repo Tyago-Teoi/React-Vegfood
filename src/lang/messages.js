@@ -20,9 +20,13 @@ export const messages = {
     "card.restaurant-name": "Restaurant",
     "card.dish": "An example of a dish",
     "login.continue": "Continue",
-    "login.login-msg": "Login or Create your Account!",
+    "login.step1-header": "Login or Create your Account!",
+    "login.password-placeholder": "Enter your password",
     "login.email-placeholder": "Enter your email",
-    "login.eating-together": "A drawing of two people eating together"
+    "login.forgot-password": "Forgot your password?",
+    "login.password-label": "Password",
+    "login.eating-together": "A drawing of two people eating together",
+    "login.step2-header": "Login!"
   },
   [LOCALES.PORTUGUESE]: {
     "navbar.logo": "Logo do VegFood: um porquinho com um coração vermelho no fundo",
@@ -43,8 +47,12 @@ export const messages = {
     "card.restaurant-name": "Restaurante",
     "card.dish": "Um exemplo de prato",
     "login.continue": "Continuar",
-    "login.login-msg": "Entre ou Crie sua Conta!",
+    "login.step1-header": "Entre ou Crie sua Conta!",
     "login.email-placeholder": "Insira seu email",
-    "login.eating-together": "Um desenho de duas pessoas comendo juntas"
+    "login.password-placeholder": "Insira sua senha",
+    "login.password-label": "Senha",
+    "login.forgot-password": "Esqueceu a senha?",
+    "login.eating-together": "Um desenho de duas pessoas comendo juntas",
+    "login.step2-header": "Faça o login!"
   },
 };

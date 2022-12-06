@@ -4,6 +4,10 @@
   padding: 6rem;
 }
 
+.login-input{
+  border-radius: 20px;
+}
+
 .login-section {
   margin-top: 10rem;
   margin-bottom: 10rem !important;
@@ -22,7 +26,7 @@
   /* height: 368px; */
 }
 
-.veg-green{
+.veg-green {
   color: #334932;
 }
 
@@ -30,4 +34,10 @@
   .vegfood-box {
     padding: 2rem;
   }
+}
+
+.forgot-password-link {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3D8361;
 }
