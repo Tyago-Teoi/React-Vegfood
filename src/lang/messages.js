@@ -26,7 +26,17 @@ export const messages = {
     "login.forgot-password": "Forgot your password?",
     "login.password-label": "Password",
     "login.eating-together": "A drawing of two people eating together",
-    "login.step2-header": "Login!"
+    "login.step2-header": "Login!",
+    "login.step3-header": "Create Your Account!",
+    "login.phone-label": "Phone number",
+    "login.confirm-password-label": "Confirm password",
+    "login.create-account-btn": "Create account",
+    "login.phone-placeholder": "Enter your phone number",
+    "login.confirm-password-placeholder": "Enter the password confirmation",
+    "dish.other-dishes-header": "Other Dishes to Check Out",
+    "dish.fee": "Delivery fee",
+    "dish.time": "Delivery time",
+    "dish.add": "Add to cart"
   },
   [LOCALES.PORTUGUESE]: {
     "navbar.logo": "Logo do VegFood: um porquinho com um coração vermelho no fundo",
@@ -53,6 +63,16 @@ export const messages = {
     "login.password-label": "Senha",
     "login.forgot-password": "Esqueceu a senha?",
     "login.eating-together": "Um desenho de duas pessoas comendo juntas",
-    "login.step2-header": "Faça o login!"
+    "login.step2-header": "Faça o login!",
+    "login.step3-header": "Crie Sua Conta!",
+    "login.phone-label": "Celular",
+    "login.confirm-password-label": "Confirme sua senha",
+    "login.create-account-btn": "Criar conta",
+    "login.phone-placeholder": "Insira o seu número de celular",
+    "login.confirm-password-placeholder": "Insira a confirmação da senha",
+    "dish.other-dishes-header": "Outros Pratos para Conferir",
+    "dish.fee": "Taxa de entrega",
+    "dish.time": "Tempo de entrega",
+    "dish.add": "Adicionar ao carrinho"
   },
 };

@@ -4,6 +4,7 @@ import { IntlProvider } from "react-intl";
 import { messages } from "./lang/messages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
+import Dish from "./pages/Dish/Dish";
 
 function App() {
   const getInitialLocale = () => {
@@ -38,6 +39,15 @@ function App() {
               path="/login"
               element={
                 <Login
+                  currentLocale={currentLocale}
+                  handleLocaleChange={handleLocaleChange}
+                />
+              }
+            />
+            <Route
+              path="/dish"
+              element={
+                <Dish
                   currentLocale={currentLocale}
                   handleLocaleChange={handleLocaleChange}
                 />

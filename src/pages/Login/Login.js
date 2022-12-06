@@ -80,9 +80,7 @@ function Login(props) {
                     <span className="icon">
                       <i className="fa-solid fa-envelope"></i>
                     </span>
-                    <label className="label veg-green">
-                      {email}
-                    </label>
+                    <label className="label veg-green">{email}</label>
                   </span>
                   <br></br>
                   <span className="icon-text mb-4">
@@ -100,14 +98,103 @@ function Login(props) {
                       id: "login.password-placeholder",
                     })}
                   ></input>
-                  <a className="forgot-password-link" href="/"><FormattedMessage id="login.forgot-password" /></a>
+                  <a className="forgot-password-link" href="/">
+                    <FormattedMessage id="login.forgot-password" />
+                  </a>
+                </div>
+                <button
+                  className="button is-fullwidth is-primary is-medium"
+                  id="continue-btn"
+                  onClick={() => goToStep(3)}
+                >
+                  <strong>
+                    <FormattedMessage id="nav.log-in" />
+                  </strong>
+                </button>
+              </>
+            )}
+
+            {/* step 3: create account */}
+            {currentStep === 3 && (
+              <>
+                <h1 className="title mb-6 veg-green">
+                  <FormattedMessage id="login.step3-header" />
+                </h1>
+                <div className="field mb-5">
+                  {/* phone input */}
+                  <span className="icon-text mb-4">
+                    <span className="icon">
+                      <i className="fa-solid fa-phone"></i>
+                    </span>
+                    <label className="label veg-green">
+                      <FormattedMessage id="login.phone-label" />
+                    </label>
+                  </span>
+                  <input
+                    className="input login-input is-medium mb-5"
+                    type="text"
+                    placeholder={intl.formatMessage({
+                      id: "login.phone-placeholder",
+                    })}
+                  ></input>
+
+                  {/* email input */}
+                  <span className="icon-text mb-4">
+                    <span className="icon">
+                      <i className="fa-solid fa-envelope"></i>
+                    </span>
+                    <label className="label veg-green">
+                      Email
+                    </label>
+                  </span>
+                  <input
+                    className="input login-input is-medium mb-5"
+                    type="text"
+                    placeholder={intl.formatMessage({
+                      id: "login.email-placeholder",
+                    })}
+                  ></input>
+
+                  {/* password input */}
+                  <span className="icon-text mb-4">
+                    <span className="icon">
+                      <i className="fa-solid fa-lock"></i>
+                    </span>
+                    <label className="label veg-green">
+                      <FormattedMessage id="login.password-label" />
+                    </label>
+                  </span>
+                  <input
+                    className="input login-input is-medium mb-5"
+                    type="password"
+                    placeholder={intl.formatMessage({
+                      id: "login.password-placeholder",
+                    })}
+                  ></input>
+
+                  {/* confirm password input */}
+                  <span className="icon-text mb-4">
+                    <span className="icon">
+                      <i className="fa-solid fa-lock"></i>
+                    </span>
+                    <label className="label veg-green">
+                      <FormattedMessage id="login.confirm-password-label" />
+                    </label>
+                  </span>
+                  <input
+                    className="input login-input is-medium mb-5"
+                    type="password"
+                    placeholder={intl.formatMessage({
+                      id: "login.confirm-password-placeholder",
+                    })}
+                  ></input>
                 </div>
                 <button
                   className="button is-fullwidth is-primary is-medium"
                   id="continue-btn"
                 >
                   <strong>
-                    <FormattedMessage id="nav.log-in" />
+                    <FormattedMessage id="login.create-account-btn" />
                   </strong>
                 </button>
               </>

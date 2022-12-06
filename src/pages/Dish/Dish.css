@@ -1,0 +1,33 @@
+.dish-description {
+  max-width: 600px;
+  color: #334932;
+}
+
+.dish {
+  max-width: 600px;
+}
+
+.button.cart-btn {
+  background-color: #7fb77e;
+}
+
+.button.cart-btn:hover {
+  background-color: #65b769;
+}
+
+#dish-content .title,
+#dish-content strong {
+  color: #334932;
+}
+
+.restaurant-link {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #3d8361;
+}
+
+@media (max-width: 768px) {
+  #dish-content {
+    text-align: center;
+  }
+}

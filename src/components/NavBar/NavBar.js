@@ -3,7 +3,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 import "./NavBar.css";
 import { LOCALES } from "../../lang/locales";
 import logo from "./logo.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar(props) {
   const currentRoute = useLocation().pathname;
@@ -60,14 +60,14 @@ function NavBar(props) {
                   </span>
                 </p>
               </div>
-              <a href="/" className="navbar-item is-hidden-desktop">
+              <Link to="/login" className="navbar-item is-hidden-desktop">
                 <span className="icon">
                   <i className="fa-solid fa-right-to-bracket"></i>
                 </span>
                 <span>
                   <FormattedMessage id="nav.log-in" />
                 </span>
-              </a>
+              </Link>
               <a href="/" className="navbar-item is-hidden-desktop">
                 <span className="icon">
                   <i className="fa-solid fa-cart-shopping"></i>
@@ -118,11 +118,11 @@ function NavBar(props) {
           {currentRoute !== "/login" && (
             <>
               <div className="navbar-item">
-                <button className="login-btn button is-primary" id="login-btn">
+                <Link to="/login" className="login-btn button is-primary" id="login-btn">
                   <strong>
                     <FormattedMessage id="nav.log-in" />
                   </strong>
-                </button>
+                </Link>
               </div>
               <div className="navbar-item highlight-on-hover">
                 <a href="/" id="cart-btn">
