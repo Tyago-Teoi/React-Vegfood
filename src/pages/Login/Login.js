@@ -4,15 +4,22 @@ import NavBar from "../../components/NavBar/NavBar";
 import "./Login.css";
 import eating from "./eating.png";
 import { FormattedMessage, useIntl } from "react-intl";
+import { useNavigate } from 'react-router-dom';
+
 
 function Login(props) {
   const intl = useIntl();
+  const navigate = useNavigate();
   let [currentStep, setCurrentStep] = useState(1);
   let [email, setEmail] = useState("");
 
   const goToStep = (step) => {
     setCurrentStep(step);
   };
+
+  const goToHome = () =>{
+    navigate("/");
+  }
 
   return (
     <>
@@ -192,6 +199,7 @@ function Login(props) {
                 <button
                   className="button is-fullwidth is-primary is-medium"
                   id="continue-btn"
+                  onClick={() => goToHome()}
                 >
                   <strong>
                     <FormattedMessage id="login.create-account-btn" />
