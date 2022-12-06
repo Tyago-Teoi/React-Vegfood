@@ -2,12 +2,13 @@ import "./Card.css";
 import { FormattedMessage } from "react-intl";
 import { useIntl } from "react-intl";
 import dish from "./dish-image.png";
+import { Link} from "react-router-dom";
 
 const Card = () => {
   const intl = useIntl();
 
   return (
-    <a href="/" className="is-flex is-justify-content-center">
+    <Link to="/dish" className="is-flex is-justify-content-center">
       <div className="card is-flex is-justify-content-center">
         <div className="content">
           <img className="image" src={dish} alt={intl.formatMessage({
@@ -22,7 +23,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
