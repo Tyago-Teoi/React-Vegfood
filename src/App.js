@@ -5,6 +5,7 @@ import { messages } from "./lang/messages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Dish from "./pages/Dish/Dish";
+import Cart from "./pages/Cart/Cart";
 
 function App() {
   const getInitialLocale = () => {
@@ -48,6 +49,15 @@ function App() {
               path="/dish"
               element={
                 <Dish
+                  currentLocale={currentLocale}
+                  handleLocaleChange={handleLocaleChange}
+                />
+              }
+            />
+            <Route
+              path="/cart"
+              element={
+                <Cart
                   currentLocale={currentLocale}
                   handleLocaleChange={handleLocaleChange}
                 />

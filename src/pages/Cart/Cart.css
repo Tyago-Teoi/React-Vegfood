@@ -1,0 +1,52 @@
+.cart-card {
+  max-width: 910px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.cart-card:hover {
+  background-color: white;
+}
+
+.cart-internal-card {
+  max-width: 100%;
+}
+
+.cart-internal-card:hover {
+  background-color: #d6cda4;
+}
+
+.cart-narrow-card {
+  max-width: 450px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.cart-narrow-card:hover {
+  background-color: white;
+}
+
+.cart-link {
+  margin-left: 30px;
+  color: #3d8361;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.check{
+  margin-right: 5px;
+}
+
+.price{
+  padding-left: 40px;
+}
+
+#end-btn {
+  background-color: #7fb77e;
+}
+
+#end-btn:hover {
+  background-color: #65b769;
+}

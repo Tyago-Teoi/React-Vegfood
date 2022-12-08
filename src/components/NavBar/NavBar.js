@@ -4,6 +4,7 @@ import "./NavBar.css";
 import { LOCALES } from "../../lang/locales";
 import logo from "./logo.png";
 import { Link, useLocation } from "react-router-dom";
+import AccessibilityBar from "../AccessibilityBar/AccessibilityBar";
 
 function NavBar(props) {
   const currentRoute = useLocation().pathname;
@@ -14,6 +15,7 @@ function NavBar(props) {
 
   return (
     <>
+      <AccessibilityBar></AccessibilityBar>
       <nav
         id="nav-vegfood"
         className="navbar"

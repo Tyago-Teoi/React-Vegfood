@@ -1,0 +1,30 @@
+#buy-card{
+    max-width: 100%;
+}
+
+#buy-card:hover{
+    background-color: #d6cda4;
+}
+
+.price-container{
+    margin-left: auto;
+    max-width: 100px;
+    text-align: center;
+}
+
+.quantity-container{
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .price-container{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100px;
+        text-align: center;
+    }
+
+    .buy-column{
+        text-align: center;
+    }
+  }

@@ -4,8 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import "./Login.css";
 import eating from "./eating.png";
 import { FormattedMessage, useIntl } from "react-intl";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 function Login(props) {
   const intl = useIntl();
@@ -17,9 +16,9 @@ function Login(props) {
     setCurrentStep(step);
   };
 
-  const goToHome = () =>{
+  const goToHome = () => {
     navigate("/");
-  }
+  };
 
   return (
     <>
@@ -135,6 +134,7 @@ function Login(props) {
                     </span>
                     <label className="label veg-green">
                       <FormattedMessage id="login.phone-label" />
+                      <span className="mandatoy"> *</span>
                     </label>
                   </span>
                   <input
@@ -151,7 +151,7 @@ function Login(props) {
                       <i className="fa-solid fa-envelope"></i>
                     </span>
                     <label className="label veg-green">
-                      Email
+                      Email <span className="mandatoy"> *</span>
                     </label>
                   </span>
                   <input
@@ -168,7 +168,8 @@ function Login(props) {
                       <i className="fa-solid fa-lock"></i>
                     </span>
                     <label className="label veg-green">
-                      <FormattedMessage id="login.password-label" />
+                      <FormattedMessage id="login.password-label" />{" "}
+                      <span className="mandatoy"> *</span>
                     </label>
                   </span>
                   <input
@@ -185,7 +186,8 @@ function Login(props) {
                       <i className="fa-solid fa-lock"></i>
                     </span>
                     <label className="label veg-green">
-                      <FormattedMessage id="login.confirm-password-label" />
+                      <FormattedMessage id="login.confirm-password-label" />{" "}
+                      <span className="mandatoy"> *</span>
                     </label>
                   </span>
                   <input

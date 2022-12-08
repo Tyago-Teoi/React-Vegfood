@@ -17,7 +17,7 @@ const Card = () => {
           <div className="txt_larger">
             <FormattedMessage id="card.dish-name" />
           </div>
-          <div className="txt_smaller">R$ 4,00</div>
+          <div className="txt_smaller">R$ 10,00</div>
           <div className="txt_smaller">
             <FormattedMessage id="card.restaurant-name" />
           </div>

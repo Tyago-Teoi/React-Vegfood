@@ -29,6 +29,10 @@
   color: #334932;
 }
 
+.mandatoy{
+  color: #FF3838;
+}
+
 @media (max-width: 768px) {
   .vegfood-box {
     padding: 2rem;
