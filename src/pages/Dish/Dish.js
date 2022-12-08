@@ -5,8 +5,10 @@ import dish from "./dish-big.png";
 import Card from "../../components/Card/Card";
 import { FormattedMessage, useIntl } from "react-intl";
 import "./Dish.css";
+import { useNavigate } from "react-router-dom";
 
 function Dish(props) {
+  const navigate = useNavigate();
   const intl = useIntl();
   return (
     <>
@@ -47,7 +49,7 @@ function Dish(props) {
               <p className="subtitle is-5"><FormattedMessage id="dish.time" />: 60 min.</p>
             </div>
 
-            <button className="button is-primary is-medium cart-btn">
+            <button onClick={() => navigate("/cart")} className="button is-primary is-medium cart-btn">
               <span className="icon">
                 <i className="fa-solid fa-cart-shopping"></i>
               </span>

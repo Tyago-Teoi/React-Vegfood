@@ -17,6 +17,7 @@ function Login(props) {
   };
 
   const goToHome = () => {
+    sessionStorage.setItem("isLogged", "yes");
     navigate("/");
   };
 
@@ -55,7 +56,7 @@ function Login(props) {
                   </span>
                   <input
                     className="input login-input is-medium"
-                    type="text"
+                    type="email"
                     placeholder={intl.formatMessage({
                       id: "login.email-placeholder",
                     })}
@@ -66,7 +67,9 @@ function Login(props) {
                 <button
                   className="button is-fullwidth is-primary is-medium"
                   id="continue-btn"
-                  onClick={() => goToStep(2)}
+                  onClick={() => {
+                    goToStep(2);
+                  }}
                 >
                   <strong>
                     <FormattedMessage id="login.continue" />
@@ -139,7 +142,7 @@ function Login(props) {
                   </span>
                   <input
                     className="input login-input is-medium mb-5"
-                    type="text"
+                    type="tel"
                     placeholder={intl.formatMessage({
                       id: "login.phone-placeholder",
                     })}

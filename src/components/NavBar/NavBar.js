@@ -27,8 +27,8 @@ function NavBar(props) {
             <img
               src={logo}
               alt={intl.formatMessage({
-                  id: "navbar.logo",
-                })}
+                id: "navbar.logo",
+              })}
               id="logo-vegfood"
             />
           </a>
@@ -119,19 +119,33 @@ function NavBar(props) {
 
           {currentRoute !== "/login" && (
             <>
-              <div className="navbar-item">
-                <Link to="/login" className="login-btn button is-primary" id="login-btn">
-                  <strong>
-                    <FormattedMessage id="nav.log-in" />
-                  </strong>
-                </Link>
-              </div>
+              {sessionStorage.getItem("isLogged") !== "yes" ? (
+                <div className="navbar-item">
+                  <Link
+                    to="/login"
+                    className="login-btn button is-primary"
+                    id="login-btn"
+                  >
+                    <strong>
+                      <FormattedMessage id="nav.log-in" />
+                    </strong>
+                  </Link>
+                </div>
+              ) : (
+                <div className="navbar-item highlight-on-hover">
+                  <a href="/" id="cart-btn">
+                    <span className="material-icons" id="cart-icon">
+                      person
+                    </span>
+                  </a>
+                </div>
+              )}
               <div className="navbar-item highlight-on-hover">
-                <a href="/" id="cart-btn">
+                <Link to="/cart" id="cart-btn">
                   <span className="material-icons" id="cart-icon">
                     shopping_cart
                   </span>
-                </a>
+                </Link>
               </div>
             </>
           )}
