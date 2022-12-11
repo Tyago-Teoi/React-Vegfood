@@ -1,7 +1,7 @@
 {
   "name": "react-vegfood",
   "version": "0.1.0",
-  "homepage": "https://vegfood.github.io/React-Vegfood",
+  "homepage": "https://tyago-teoi.github.io/React-Vegfood/",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.4.0",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
