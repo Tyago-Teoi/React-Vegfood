@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Vegfood/static/css/main.69ef4363.css",
-    "main.js": "/React-Vegfood/static/js/main.7e53ece9.js",
+    "main.js": "/React-Vegfood/static/js/main.84b3602b.js",
     "static/js/787.b2b83152.chunk.js": "/React-Vegfood/static/js/787.b2b83152.chunk.js",
     "static/media/dish-big.png": "/React-Vegfood/static/media/dish-big.d11e0c710a24947f99b2.png",
     "static/media/veggies.jpg": "/React-Vegfood/static/media/veggies.7ae777fc1d9a46b668ec.jpg",
@@ -11,11 +11,11 @@
     "static/media/logo-footer.png": "/React-Vegfood/static/media/logo-footer.8fe49e1c918f72d476df.png",
     "index.html": "/React-Vegfood/index.html",
     "main.69ef4363.css.map": "/React-Vegfood/static/css/main.69ef4363.css.map",
-    "main.7e53ece9.js.map": "/React-Vegfood/static/js/main.7e53ece9.js.map",
+    "main.84b3602b.js.map": "/React-Vegfood/static/js/main.84b3602b.js.map",
     "787.b2b83152.chunk.js.map": "/React-Vegfood/static/js/787.b2b83152.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69ef4363.css",
-    "static/js/main.7e53ece9.js"
+    "static/js/main.84b3602b.js"
   ]
 }
