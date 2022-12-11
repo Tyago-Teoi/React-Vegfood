@@ -7,6 +7,7 @@ import * as bulmaToast from "bulma-toast";
 import { useNavigate } from "react-router-dom";
 import { useIntl } from "react-intl";
 import "./Cart.css";
+import { CFormCheck } from '@coreui/react';
 
 function Cart(props) {
   const navigate = useNavigate();
@@ -44,7 +45,7 @@ function Cart(props) {
             </h1>
             <div className="card cart-internal-card">
               <label className="checkbox">
-                <input className="check" type="checkbox" />
+                <CFormCheck className="check" name="checkboxDePagamento" type="radio" defaultChecked></CFormCheck>
                 <FormattedMessage id="cart.card" /> ************054-6{" "}
                 <a className="cart-link" href="/">
                   <FormattedMessage id="cart.change-card" />
@@ -52,12 +53,12 @@ function Cart(props) {
               </label>
               <br />
               <label className="checkbox">
-                <input className="check" type="checkbox" />
+                <CFormCheck className="check" name="checkboxDePagamento" type="radio"></CFormCheck>
                 <FormattedMessage id="cart.cash" />
               </label>
               <br />
               <label className="checkbox">
-                <input className="check" type="checkbox" />
+                <CFormCheck className="check" name="checkboxDePagamento" type="radio"></CFormCheck>
                 PIX
               </label>
             </div>
