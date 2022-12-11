@@ -16,10 +16,10 @@ function AccessibilityBar() {
     <>
       <nav className="navbar">
         <div className="navbar-brand accessb">
-          <a className="navbar-item" onClick={(e) => decreaseSize(e)}>
+          <a className="navbar-item" onClick={(e) => decreaseSize(e)} href="/#">
             <strong>A-</strong>
           </a>
-          <a className="navbar-item" onClick={(e) => increaseSize(e)}>
+          <a className="navbar-item" onClick={(e) => increaseSize(e)} href="/#">
             <strong>A+</strong>
           </a>
         </div>
