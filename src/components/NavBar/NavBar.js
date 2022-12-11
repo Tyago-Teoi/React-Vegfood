@@ -33,7 +33,7 @@ function NavBar(props) {
             />
           </a>
 
-          <a
+          <a href="/#"
             onClick={activateBurger}
             role="button"
             className={`navbar-burger ${isBurgerActive ? "is-active" : ""}`}
