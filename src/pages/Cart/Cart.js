@@ -31,7 +31,7 @@ function Cart(props) {
             <div className="card cart-internal-card">
               <p>
                 Rua Marcondes Paula, n° 336{" "}
-                <a className="cart-link" href="/">
+                <a className="cart-link" href="#">
                   <FormattedMessage id="cart.change-address" />
                 </a>
               </p>
@@ -47,7 +47,7 @@ function Cart(props) {
               <label className="checkbox">
                 <CFormCheck className="check" name="checkboxDePagamento" type="radio" defaultChecked></CFormCheck>
                 <FormattedMessage id="cart.card" /> ************054-6{" "}
-                <a className="cart-link" href="/">
+                <a className="cart-link" href="#">
                   <FormattedMessage id="cart.change-card" />
                 </a>
               </label>

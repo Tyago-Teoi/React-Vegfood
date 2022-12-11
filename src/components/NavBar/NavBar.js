@@ -23,7 +23,7 @@ function NavBar(props) {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item highlight-on-hover" href="/">
+          <a className="navbar-item highlight-on-hover" href="/React-Vegfood">
             <img
               src={logo}
               alt={intl.formatMessage({

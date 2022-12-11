@@ -1,7 +1,7 @@
 {
   "name": "react-vegfood",
   "version": "0.1.0",
-  "homepage": "https://tyago-teoi.github.io/React-Vegfood/",
+  "homepage": "https://tyago-teoi.github.io/React-Vegfood",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.4.0",

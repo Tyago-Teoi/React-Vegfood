@@ -29,7 +29,7 @@ function BuyCard() {
                 <input type="number" min="1" className="input" />
               </div>
               <div className="column">
-                <a className="cart-link" href="/">
+                <a className="cart-link" href="#">
                   <FormattedMessage id="buy-card.remove" />
                 </a>
               </div>
